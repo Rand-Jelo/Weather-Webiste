@@ -35,3 +35,54 @@ body {
     margin: 0;
     color: #fff; 
   }
+
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .weather-card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #000;
+    margin: auto;
+  }
+  
+  .weather-card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  
+  .current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .weather-icon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .weather-card p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+  }
+  
+  .temperature {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  
