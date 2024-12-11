@@ -44,6 +44,7 @@ body {
     padding: 20px;
   }
   
+  /* Weather card style*/
   .weather-card {
     background: rgba(255,255,255,0.9);
     border-radius: 10px;
@@ -85,4 +86,46 @@ body {
     font-weight: bold;
   }
   
+  /* Hourly forecast style */
+  .hourly-forecast {
+    margin-top: 20px;
+    text-align: center;
+  }
   
+  .hourly-forecast h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .hourly-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+  
+  .hour-card {
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    min-width: 60px;
+    flex-shrink: 0;
+  }
+  
+  .hour-card h4 {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .hour-card i {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .hour-card p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }

@@ -88,16 +88,47 @@ function displayHourlyForecast(hourlyData) {
         const formattedHour = `${hour}:00`;
         const temp = Math.round(hourData.temp);
         const weatherIcon = hourData.weather[0].icon;
+        const iconClass = getWeatherIconClass(weatherIcon);
 
         const card = document.createElement('div');
         card.classList.add('hour-card');
         card.innerHTML = `
             <h4>${formattedHour}</h4>
+            <i class="${iconClass}"></i>
             <p>${temp}°C</p>
         `;
 
         hourlyContainer.appendChild(card);
     });
+}
+
+// Font Awesome icons dynamic based on day or night and weather
+function getWeatherIconClass(weatherIcon) {
+    const code = weatherIcon.slice(0, 2);
+    const isDay = weatherIcon.endsWith('d');
+
+    switch (code) {
+        case '01':
+            return isDay ? 'fas fa-sun' : 'fas fa-moon';
+        case '02':
+            return isDay ? 'fas fa-cloud-sun' : 'fas fa-cloud-moon';
+        case '03':
+            return 'fas fa-cloud';
+        case '04':
+            return 'fas fa-cloud-meatball';
+        case '09':
+            return 'fas fa-cloud-showers-heavy';
+        case '10':
+            return 'fas fa-cloud-rain';
+        case '11':
+            return 'fas fa-bolt';
+        case '13':
+            return 'fas fa-snowflake';
+        case '50':
+            return 'fas fa-smog';
+        default:
+            return 'fas fa-cloud';
+    }
 }
 
 
