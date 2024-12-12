@@ -32,6 +32,20 @@
                     <!-- Hourly forecast cards will be dynamic -->
                 </div>
             </div>
+            <!-- Button to open the advice form -->
+            <button class="advice-btn">What should I wear?</button>
+
+            <!-- Hidden form that appears when user clicks the button -->
+            <div class="advice-form-container" style="display: none;">
+                <h4>Check clothing advice</h4>
+                <form class="advice-form">
+                    <label for="time-input">Enter an hour of the day (0-23):</label><br>
+                    <input type="number" id="time-input" name="time" min="0" max="23" required>
+                    <button type="submit">Get Advice</button>
+                </form>
+                <p class="advice-result"></p>
+            </div>
+        </div>
     </main>
 
     <!-- Font Awesome -->
