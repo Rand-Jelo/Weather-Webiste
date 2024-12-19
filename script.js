@@ -21,7 +21,29 @@ const adviceFormContainer = document.querySelector('.advice-form-container');
 const adviceForm = document.querySelector('.advice-form');
 const adviceResult = document.querySelector('.advice-result');
 
+// Modal select elements
+const modalOverlay = document.querySelector('.modal-overlay');
+const modalYesBtn = document.querySelector('.modal-yes-btn');
+const modalNoBtn = document.querySelector('.modal-no-btn');
+
 let storedHourlyData = null;
+
+// Show the modal on page load
+window.addEventListener('load', () => {
+    modalOverlay.style.display = 'flex';
+});
+
+// If the user clicks "Yes", attempt geolocation again
+modalYesBtn.addEventListener('click', () => {
+    modalOverlay.style.display = 'none';
+    getUserLocation();
+});
+
+// If the user clicks "No", fall back to the default location immediately
+modalNoBtn.addEventListener('click', () => {
+    modalOverlay.style.display = 'none';
+    fetchWeatherData(defaultLocation.lat, defaultLocation.lon);
+});
 
 // Fetch user location
 function getUserLocation() {
