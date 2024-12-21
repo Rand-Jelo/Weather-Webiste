@@ -8,6 +8,29 @@ Weather Finder is an interactive web application that provides current weather c
 
 ---
 
+## Table of Contents
+
+- [User Experience (UX)](#user-experience-ux)
+  - [User Stories](#user-stories)
+- [Design](#design)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+  - [Features Left to Implement](#features-left-to-implement)
+- [Technologies Used](#technologies-used)
+- [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+- [Testing](#testing)
+  - [Validation Results](#validation-results)
+  - [Manual Testing](#manual-testing)
+  - [Lighthouse Report](#lighthouse-report)
+- [Deployment and Local Development](#deployment-and-local-development)
+  - [GitHub Pages](#github-pages)
+  - [Forking the GitHub Repository](#forking-the-github-repository)
+  - [Local Clone](#local-clone)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
+
+---
+
 ## User Experience (UX)
 
 The Weather Finder application aims to deliver accurate weather information and practical advice to users in a simple and user-friendly manner.
