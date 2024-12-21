@@ -87,3 +87,12 @@ The Weather Finder application aims to deliver accurate weather information and 
    - Enable users to switch between light and dark modes or select custom color schemes.
 
 ---
+
+## Technologies Used
+
+- **HTML5**: For structuring the content.
+- **CSS3**: For styling and responsive design.
+- **JavaScript (ES6)**: For fetching weather data and dynamic interaction.
+- **OpenWeatherMap API**: For real-time weather data.
+
+---
