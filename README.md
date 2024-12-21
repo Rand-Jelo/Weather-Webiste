@@ -41,3 +41,49 @@ The Weather Finder application aims to deliver accurate weather information and 
 
 
 ---
+
+## Features
+
+### Existing Features
+
+1. **Header and Logo**
+   - Displays the application title and logo prominently at the top of the page.
+
+      ![Header and logo](assets/readme-images/header.png)
+
+2. **Weather Card**
+   - Displays the current weather, including temperature, conditions, and an icon representing the weather type.
+   - Provides an hourly weather forecast with a scrollable layout.
+
+      ![Weather Card](assets/readme-images/weather-card.png)
+
+3. **Hourly Forecast Toggle**
+   - Allows users to toggle between "Today's Highlights" and "Hourly Forecast."
+   - Highlights key times (e.g., morning, noon, evening) for easier comprehension.
+
+      ![Today's Weather](assets/readme-images/todays-weather.png)
+
+      ![Hourly Weather](assets/readme-images/hourly-weather.png)
+
+4. **Clothing Advice Form**
+   - A form where users can input a specific hour to receive clothing advice based on the temperature and weather conditions.
+
+      ![Advice Form](assets/readme-images/advice-form.png)
+
+5. **Footer**
+   - Provides links to social media accounts and serves as a closing element for the page.
+
+     ![Footer](assets/readme-images/footer.png)
+
+---
+
+## Features Left to Implement
+
+1. **Weekly Forecast**
+   - Expand the application to include a 7-day weather forecast.
+2. **Location Search**
+   - Add functionality to search for weather information for other locations.
+3. **Customizable Themes**
+   - Enable users to switch between light and dark modes or select custom color schemes.
+
+---
