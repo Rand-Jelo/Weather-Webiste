@@ -30,3 +30,14 @@ The Weather Finder application aims to deliver accurate weather information and 
   - Share the application with friends or colleagues seeking similar functionality.
 
 ---
+
+## Design
+
+- **Color Scheme**: The app uses a combination of deep purple (#4B0082) and white, providing a clean, modern look.
+- **Typography**: Simple, readable fonts are used to ensure clarity.
+- **Wireframes**: Wireframes for this project were created using Balsamiq.
+
+    ![Wireframes](assets/readme-images/wireframes.png)
+
+
+---
