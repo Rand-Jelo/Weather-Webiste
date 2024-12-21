@@ -96,3 +96,13 @@ The Weather Finder application aims to deliver accurate weather information and 
 - **OpenWeatherMap API**: For real-time weather data.
 
 ---
+
+## Frameworks, Libraries & Programs Used
+
+- **Font Awesome**: For weather and social media icons.
+- **Git & GitHub**: For version control and deployment.
+- **VS Code**: For coding and debugging.
+- **Am I Responsive**: To validate the responsiveness of the website.
+- **Balsamiq**: Used to create wireframes for layout planning.
+
+---
