@@ -106,3 +106,58 @@ The Weather Finder application aims to deliver accurate weather information and 
 - **Balsamiq**: Used to create wireframes for layout planning.
 
 ---
+
+## Testing
+
+### Validation Results
+
+- **HTML**: Validated using the [W3C Markup Validator](https://validator.w3.org/).
+- **CSS**: Validated using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+
+<details>
+<summary>index.html
+</summary>
+
+![HTML validation result](/assets/readme-images/html-validation.png)
+</details>
+
+<details>
+<summary>style.css
+</summary>
+
+![CSS validation result](/assets/readme-images/css-validation.png)
+</details>
+
+### Manual Testing
+
+- **Functionality Testing**
+  - Tested the geolocation feature to fetch weather data for the user’s current location.
+  - Verified the functionality of the toggle button between "Today's Highlights" and "Hourly Forecast."
+  - Checked the clothing advice form for input validation and output accuracy.
+
+- **Responsiveness Testing**
+  - Ensured proper alignment and scaling of elements on mobile, tablet, and desktop devices.
+  - Verified that scrollable hourly forecast works as expected on larger screens.
+
+- **Navigation Testing**
+  - Confirmed that all buttons and links function correctly.
+
+### Lighthouse Report
+
+#### Desktop
+<details>
+<summary>Desktop report
+</summary>
+
+![Desktop lighthouse report](/assets/readme-images/lighthouse-desktop.png)
+</details>
+
+#### Mobile
+<details>
+<summary>Mobile report
+</summary>
+
+![Mobile lighthouse report](/assets/readme-images/lighthouse-mobile.png)
+</details>
+
+---
