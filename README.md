@@ -193,3 +193,28 @@ By forking the repository, we make a copy of the original repository on our GitH
 7. Press Enter and your local clone will be created.
 
 ---
+
+## Credits
+
+### Code
+
+- Weather API integration and geolocation features adapted from the [OpenWeatherMap API documentation](https://openweathermap.org/api).
+- Scrollbar customization ideas from [MDN Web Docs](https://developer.mozilla.org/).
+
+### Media
+
+- Icons from [Font Awesome](https://fontawesome.com/).
+
+### Tutorials and Resources
+
+- JavaScript tutorials from [JavaScript.info](https://javascript.info/).
+- OpenWeatherMap API integration guidance from [YouTube tutorials](https://youtube.com/).
+
+---
+
+## Acknowledgements
+
+- A big thank you to my mentor, Mitko Bachvarov, for his continuous guidance and feedback during this project.
+- Special thanks to the Stack Overflow community for their solutions to development challenges.
+
+---
