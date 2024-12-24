@@ -160,6 +160,13 @@ The Weather Finder application aims to deliver accurate weather information and 
 ![CSS validation result](/assets/readme-images/css-validation.png)
 </details>
 
+<details>
+<summary>script.js
+</summary>
+
+![JavaScript validation result](/assets/readme-images/javascript-validation.png)
+</details>
+
 ### Manual Testing
 
 - **Functionality Testing**
