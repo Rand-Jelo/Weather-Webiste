@@ -93,7 +93,16 @@ The Weather Finder application aims to deliver accurate weather information and 
 
       ![Advice Form](assets/readme-images/advice-form.png)
 
-5. **Footer**
+ **Modal for Location Access**
+   - A popup modal appears when the application loads, asking the user for location access.
+   - The modal includes a brief explanation of why location data is needed and offers options to either grant or deny access:
+     - **Yes**: Fetches the user's location and retrieves weather data for that location.
+     - **No**: Falls back to a default location (London).
+   - Enhances the user experience by making location access clear and transparent.
+
+      ![Modal Popup](assets/readme-images/modal-popup.png)
+
+6. **Footer**
    - Provides links to social media accounts and serves as a closing element for the page.
 
      ![Footer](assets/readme-images/footer.png)
