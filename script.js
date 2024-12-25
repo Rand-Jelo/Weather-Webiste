@@ -290,13 +290,21 @@ function provideClothingAdvice(hour) {
     return;
   }
 
-  if (hour < 0 || hour > 23 || hour >= storedHourlyData.length) {
+  const currentHour = new Date().getHours();
+  let index = hour - currentHour;
+
+  // For wrapping around midnight
+  if (index < 0) {
+    index += 24;
+  }
+
+  if (index < 0 || index >= storedHourlyData.length) {
     adviceResult.textContent =
       "Please enter a valid hour within the available forecast range (0-23).";
     return;
   }
 
-  const forecast = storedHourlyData[hour];
+  const forecast = storedHourlyData[index];
   const temp = forecast.temp;
   const weatherCondition = forecast.weather[0].description.toLowerCase();
   const isRainy =
@@ -305,17 +313,16 @@ function provideClothingAdvice(hour) {
 
   let tempAdvice;
   if (temp < 0) {
-    tempAdvice = "It's freezing; wear a heavy coat, scarf, and gloves.";
+    tempAdvice = "It's freezing! Wear a heavy coat, scarf, and gloves.";
   } else if (temp < 10) {
     tempAdvice =
-      "It's quite cold; a warm jacket and maybe a beanie would be good.";
+      "It's quite cold. A warm jacket and maybe a beanie would be good.";
   } else if (temp < 20) {
-    tempAdvice = "It's cool; a light jacket or sweater should suffice.";
+    tempAdvice = "Comfortable but slightly cool. Long sleeves or a light jacket will do.";
   } else if (temp < 25) {
-    tempAdvice =
-      "The temperature is mild; a long-sleeve shirt or light clothing is fine.";
+    tempAdvice = "Warm and pleasant! Short sleeves or light layers are fine.";
   } else {
-    tempAdvice = "It's warm; wear something light and breathable.";
+    tempAdvice = "It's very hot! Wear breathable clothes and stay hydrated.";
   }
 
   let weatherAdvice = "";
